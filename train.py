@@ -59,7 +59,7 @@ preproc_pipe = ColumnTransformer(
 KBest = SelectKBest(chi2, k="all")
 
 # Random Forest Classifier
-model = RandomForestClassifier(n_estimators=100, random_state=125)
+model = RandomForestClassifier(n_estimators=75, random_state=125)
 
 # KBest and model pipeline
 train_pipe = Pipeline(
